@@ -47,24 +47,15 @@ You will be expected to turn in code, documentation, and data (as appropriate) a
 Write concrete steps for your schedule to move from concept to working system. 
 
 ### First Milestone (Fri Apr 15)
-What exactly will be turned in on this day? 
+The Webpage outline itself will be ready on Friday, April 15th, as well as the outlines of the code for all algorithms that will be drawn as fractals. 
 
 ### Second Milestone (Fri Apr 22)
-What exactly will be turned in on this day? 
+The drawing algorithms will be implemented into the webpage itself for the second milestone, on April 22nd.
 
 ### Final Presentation (last week of semester)
-What additionally will be done in the last chunk of time?
+A live demonstration will be prepared for the last week, where we will display our chosen fractal drawings that we implemented into the website.
 
 ## Group Responsibilities
-Here each group member gets a section where they, as an individual, detail what they are responsible for in this project. Each group member writes their own Responsibility section. Include the milestones and final deliverable.
-
-**Additional instructions for teams of three:** 
-* Remember that you must have prior written permission to work in groups of three (specifically, an approved `FP3` team declaration submission).
-* The team must nominate a lead. This person is primarily responsible for code integration. This work may be shared, but the team lead has default responsibility.
-* The team lead has full partner implementation responsibilities also.
-* Identify who is team lead.
-
-In the headings below, replace the silly names and GitHub handles with your actual ones.
 
 ### Patrick Donegan @PDD-GIT
 Will develop the fractal image generator. The generator will take in a set of specs from a webpage, such as the number of levels of recursion and the shapes to be used in the drawing. The image will then be created and sent out to the webpage. 
@@ -72,5 +63,5 @@ Will develop the fractal image generator. The generator will take in a set of sp
 ### Leonard Lambda @lennylambda
 will work on...
 
-### Frank Functions @frankiefunk 
-Frank is team lead. Additionally, Frank will work on...   
+### John Adams @jadamsuml 
+John is team lead. Will be responsible for the integration between the drawings themselves, and the webpage. Will also assist the other group members where necessary.

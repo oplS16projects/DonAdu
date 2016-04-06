@@ -41,7 +41,8 @@ A Webpage and fractal image generator will work together to provide a educationa
 
 The fractal image generator will take in parameters that it recieved from the webpage. With these parameters it will put it in a algorithm and recursively build the image one step at a time. I will send a series of images back to the webpage to be displayed to the user as a "growing" image as it is animated.
 
-![Alt text](Screen Shot 2016-04-06 at 10.18.36 AM?raw=true "shape")
+
+![screen shot 2016-04-06 at 10 18 36 am](https://cloud.githubusercontent.com/assets/9092663/14320958/2f7898d8-fbe5-11e5-971b-cb94c6e13ba1.png)
 
 ## Schedule
 

@@ -4,16 +4,10 @@
 Math/Calculus students, and students of Computer Science (especially those in Computing 4 with Fred Martin) will deal with recursive functions- Fibonacci's Sequence, Fractals, etc. FTG aims to provide a resource where students may find visual examples of such functions, and are able to watch second by second as the fractals are drawn.
 
 ### Analysis
-Primarily, we will be using recursion in the fractal drawing algorithms. At this time, we do not belive anything else will be used to an extent as thorough as recursion.
+Primarily, we will be using recursion in the fractal drawing algorithms. At this time, we do not believe anything else will be used to an extent as thorough as recursion.
 
 ### Data set or other source materials
-If you will be working with existing data, where will you get those data from? (Dowload it from a website? access it in a database? create it in a simulation you will build....)
-
-How will you convert that data into a form usable for your project?  
-
-Do your homework here: if you are pulling data from somewhere, actually go download it and look at it. Explain in some detail what your plan is for accomplishing the necessary processing.
-
-If you are using some other starting materails, explain what they are. Basically: anything you plan to use that isn't code.
+The data used will be input from the user.
 
 ### Deliverable and Demonstration
 

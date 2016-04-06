@@ -27,15 +27,14 @@ Will it run on some data, like batch mode? Will you present some analytical resu
 Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
 
 ### Evaluation of Results
-We will measure success of the results by three parameters:
-1) How successful the merge between the fractal drawing algorithms and the webpage itself
-2) if the fractal drawings are animated as they draw out
-3) If the webpage commands successfully open new tabs dedicated to the animated fractal drawings
+How will you know if you are successful? 
+If you include some kind of _quantitative analysis,_ that would be good.
 
 ## Architecture Diagram
-Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.
 
-Create several paragraphs of narrative to explain the pieces and how they interoperate.
+A Webpage and fractal image generator will work together to provide a educational "growing" image that can be used by students to better understand recursion. The Webpage will be interactive with the user and accept input. That input will include the number recursions deep it will go and also the shapes that will be used to build the image. Other feature are possible if time permits.
+
+The fractal image generator will take in parameters that it recieved from the webpage. With these parameters it will put it in a algorithm and recursively build the image one step at a time. I will send a series of images back to the webpage to be displayed to the user as a "growing" image as it is animated.
 
 ## Schedule
 Explain how you will go from proposal to finished product. 
@@ -49,15 +48,24 @@ You will be expected to turn in code, documentation, and data (as appropriate) a
 Write concrete steps for your schedule to move from concept to working system. 
 
 ### First Milestone (Fri Apr 15)
-The Webpage outline itself will be ready on Friday, April 15th, as well as the outlines of the code for all algorithms that will be drawn as fractals. 
+What exactly will be turned in on this day? 
 
 ### Second Milestone (Fri Apr 22)
-The drawing algorithms will be implemented into the webpage itself for the second milestone, on April 22nd.
+What exactly will be turned in on this day? 
 
 ### Final Presentation (last week of semester)
-A live demonstration will be prepared for the last week, where we will display our chosen fractal drawings that we implemented into the website.
+What additionally will be done in the last chunk of time?
 
 ## Group Responsibilities
+Here each group member gets a section where they, as an individual, detail what they are responsible for in this project. Each group member writes their own Responsibility section. Include the milestones and final deliverable.
+
+**Additional instructions for teams of three:** 
+* Remember that you must have prior written permission to work in groups of three (specifically, an approved `FP3` team declaration submission).
+* The team must nominate a lead. This person is primarily responsible for code integration. This work may be shared, but the team lead has default responsibility.
+* The team lead has full partner implementation responsibilities also.
+* Identify who is team lead.
+
+In the headings below, replace the silly names and GitHub handles with your actual ones.
 
 ### Patrick Donegan @PDD-GIT
 Will develop the fractal image generator. The generator will take in a set of specs from a webpage, such as the number of levels of recursion and the shapes to be used in the drawing. The image will then be created and sent out to the webpage. 
@@ -65,5 +73,5 @@ Will develop the fractal image generator. The generator will take in a set of sp
 ### Leonard Lambda @lennylambda
 will work on...
 
-### John Adams @jadamsuml 
-John is team lead. Will be responsible for the integration between the drawings themselves, and the webpage. Will also assist the other group members where necessary.
+### Frank Functions @frankiefunk 
+Frank is team lead. Additionally, Frank will work on...   

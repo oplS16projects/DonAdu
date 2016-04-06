@@ -27,8 +27,13 @@ Will it run on some data, like batch mode? Will you present some analytical resu
 Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
 
 ### Evaluation of Results
-How will you know if you are successful? 
-If you include some kind of _quantitative analysis,_ that would be good.
+Success of our project will be measured by three objectives:
+
+1) The successful merge between the drawing algorithms and the webpage itself through html commands
+
+2) If the fractals are animated when they draw, second by second
+
+3) If the commands on the webpage successfully open new tabs dedicated to the animated fractal drawings
 
 ## Architecture Diagram
 
@@ -39,35 +44,17 @@ The fractal image generator will take in parameters that it recieved from the we
 ![Alt text](Screen Shot 2016-04-06 at 10.18.36 AM?raw=true "shape")
 
 ## Schedule
-Explain how you will go from proposal to finished product. 
-
-There are three deliverable milestones to explicitly define, below.
-
-The nature of deliverables depend on your project, but may include things like processed data ready for import, core algorithms implemented, interface design prototyped, etc. 
-
-You will be expected to turn in code, documentation, and data (as appropriate) at each of these stages.
-
-Write concrete steps for your schedule to move from concept to working system. 
 
 ### First Milestone (Fri Apr 15)
-What exactly will be turned in on this day? 
+The completed outlines of the website and fractal drawing algorithms will be ready for the first milestone, Friday April 15th.
 
 ### Second Milestone (Fri Apr 22)
-What exactly will be turned in on this day? 
+The Fractal algorithms will be implemented into the webpage for the second milestone, Friday April 22nd, and the webpage will be complete.
 
 ### Final Presentation (last week of semester)
-What additionally will be done in the last chunk of time?
+A fully-working webpage and interactive demo will be ready for presentation to the class.
 
 ## Group Responsibilities
-Here each group member gets a section where they, as an individual, detail what they are responsible for in this project. Each group member writes their own Responsibility section. Include the milestones and final deliverable.
-
-**Additional instructions for teams of three:** 
-* Remember that you must have prior written permission to work in groups of three (specifically, an approved `FP3` team declaration submission).
-* The team must nominate a lead. This person is primarily responsible for code integration. This work may be shared, but the team lead has default responsibility.
-* The team lead has full partner implementation responsibilities also.
-* Identify who is team lead.
-
-In the headings below, replace the silly names and GitHub handles with your actual ones.
 
 ### Patrick Donegan @PDD-GIT
 Will develop the fractal image generator. The generator will take in a set of specs from a webpage, such as the number of levels of recursion and the shapes to be used in the drawing. The image will then be created and sent out to the webpage. 
@@ -75,5 +62,5 @@ Will develop the fractal image generator. The generator will take in a set of sp
 ### Leonard Lambda @lennylambda
 will work on...
 
-### Frank Functions @frankiefunk 
-Frank is team lead. Additionally, Frank will work on...   
+### John Adams @jadamsuml 
+John is team lead, and is responsible for the integration between the webpage and drawing algorithms, and assisting other team members where necessary.   

@@ -1,7 +1,7 @@
-# Project Title: title here (10 words maximum)
+# Project Title: FTG- Fractal Turtle Graphics
 
 ### Statement
-Describe your project. Why is it interesting? Why is it interesting to you personally? What do you hope to learn? 
+Math/Calculus students, and students of Computer Science (especially those in Computing 4 with Fred Martin) will deal with recursive functions- Fibonacci's Sequence, Fractals, etc. FTG aims to provide a resource where students may find visual examples of such functions, and are able to watch second by second as the fractals are drawn.
 
 ### Analysis
 Explain what approaches from class you will bring to bear on the project. Be explicit: e.g., will you use recursion? How? Will you use map/filter/reduce? How? Will you use data abstraction? Will you use object-orientation? Will you use functional approaches to processing your data? Will you use state-modification approaches? A combination?

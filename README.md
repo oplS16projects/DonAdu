@@ -27,8 +27,10 @@ Will it run on some data, like batch mode? Will you present some analytical resu
 Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
 
 ### Evaluation of Results
-How will you know if you are successful? 
-If you include some kind of _quantitative analysis,_ that would be good.
+We will measure success of the results by three parameters:
+1) How successful the merge between the fractal drawing algorithms and the webpage itself
+2) if the fractal drawings are animated as they draw out
+3) If the webpage commands successfully open new tabs dedicated to the animated fractal drawings
 
 ## Architecture Diagram
 Upload the architecture diagram you made for your slide presentation to your repository, and include it in-line here.

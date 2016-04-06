@@ -4,9 +4,7 @@
 Math/Calculus students, and students of Computer Science (especially those in Computing 4 with Fred Martin) will deal with recursive functions- Fibonacci's Sequence, Fractals, etc. FTG aims to provide a resource where students may find visual examples of such functions, and are able to watch second by second as the fractals are drawn.
 
 ### Analysis
-Explain what approaches from class you will bring to bear on the project. Be explicit: e.g., will you use recursion? How? Will you use map/filter/reduce? How? Will you use data abstraction? Will you use object-orientation? Will you use functional approaches to processing your data? Will you use state-modification approaches? A combination?
-
-The idea here is to identify what ideas from the class you will use in carrying out your project. 
+Primarily, we will be using recursion in the fractal drawing algorithms. At this time, we do not belive anything else will be used to an extent as thorough as recursion.
 
 ### Data set or other source materials
 If you will be working with existing data, where will you get those data from? (Dowload it from a website? access it in a database? create it in a simulation you will build....)
@@ -19,15 +17,9 @@ If you are using some other starting materails, explain what they are. Basically
 
 ### Deliverable and Demonstration
 
-We will be able to enter input into the webpage and then the image will be created in a new tab.
+We will be able to enter input into the webpage and then the image will be created in a new tab. Taking user input, the new tab will have an animated, step by step drawing of the fractal diagram, as specified by the user input data- how many recursions, what shape will be used.
 
-What exactly will you produce at the end of the project? A piece of software, yes, but what will it do? Here are some questions to think about (and answer depending on your application).
-
-We will of developed an interactive webpage and a fractal image generator.
-
-Will it run on some data, like batch mode? Will you present some analytical results of the processing? How can it be re-run on different source data?
-
-Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
+We will have three shapes that we can select on the webpage- Triangles, Squares, and Circles, that can be selected by the user. The new tabs will display either blank or an error message. As it is a visual process, the live demo will be interactive, and we can ask for input from the class.
 
 ### Evaluation of Results
 Success of our project will be measured by three objectives:

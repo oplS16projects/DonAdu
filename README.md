@@ -66,8 +66,8 @@ Here each group member gets a section where they, as an individual, detail what 
 
 In the headings below, replace the silly names and GitHub handles with your actual ones.
 
-### Susan Scheme @susanscheme
-will write the....
+### Patrick Donegan @PDD-GIT
+Will develop the fractal image generator. The generator will take in a set of specs from a webpage, such as the number of levels of recursion and the shapes to be used in the drawing. The image will then be created and sent out to the webpage. 
 
 ### Leonard Lambda @lennylambda
 will work on...

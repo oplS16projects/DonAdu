@@ -18,9 +18,12 @@ Do your homework here: if you are pulling data from somewhere, actually go downl
 If you are using some other starting materails, explain what they are. Basically: anything you plan to use that isn't code.
 
 ### Deliverable and Demonstration
-Explain exactly what you'll have at the end. What will it be able to do at the live demo?
+
+We will be able to enter input into the webpage and then the image will be created in a new tab.
 
 What exactly will you produce at the end of the project? A piece of software, yes, but what will it do? Here are some questions to think about (and answer depending on your application).
+
+We will of developed an interactive webpage and a fractal image generator.
 
 Will it run on some data, like batch mode? Will you present some analytical results of the processing? How can it be re-run on different source data?
 

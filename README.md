@@ -4,7 +4,7 @@
 Math/Calculus students, and students of Computer Science (especially those in Computing 4 with Fred Martin) will deal with recursive functions- Fibonacci's Sequence, Fractals, etc. FTG aims to provide a resource where students may find visual examples of such functions, and are able to watch second by second as the fractals are drawn.
 
 ### Analysis
-Primarily, we will be using recursion in the fractal drawing algorithms. At this time, we do not believe anything else will be used to an extent as thorough as recursion.
+Primarily, we will be using recursion and data abstraction in the fractal drawing algorithms. At this time, we do not believe anything else will be used to an extent as thorough as recursion.
 
 ### Data set or other source materials
 The data used will be input from the user.
@@ -49,8 +49,8 @@ A fully-working webpage and interactive demo will be ready for presentation to t
 ### Patrick Donegan @PDD-GIT
 Will develop the fractal image generator. The generator will take in a set of specs from a webpage, such as the number of levels of recursion and the shapes to be used in the drawing. The image will then be created and sent out to the webpage. 
 
-### Leonard Lambda @lennylambda
-will work on...
+### Ebenezer Ampadu @eampadu
+will work on Abstract, and Web Development portion of the project.
 
 ### John Adams @jadamsuml 
 John is team lead, and is responsible for the integration between the webpage and drawing algorithms, and assisting other team members where necessary.   

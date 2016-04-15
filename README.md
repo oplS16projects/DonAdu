@@ -38,6 +38,8 @@ The fractal image generator will take in parameters that it recieved from the we
 ### First Milestone (Fri Apr 15)
 The completed outlines of the website and fractal drawing algorithms will be ready for the first milestone, Friday April 15th.
 
+Patrick Donegan - created the fractal drawing of squares. fractal.rkt file
+
 ### Second Milestone (Fri Apr 22)
 The Fractal algorithms will be implemented into the webpage for the second milestone, Friday April 22nd, and the webpage will be complete.
 

@@ -39,6 +39,7 @@ The fractal image generator will take in parameters that it recieved from the we
 The completed outlines of the website and fractal drawing algorithms will be ready for the first milestone, Friday April 15th.
 
 Patrick Donegan - created the fractal drawing of squares. fractal.rkt file
+
 John Adams- modified WebApp.rkt file, webpage now includesa text box for future user input, and added Patrick Donegan's pythagoras-tree function to the file, for future use. WebApp.rkt
 
 ### Second Milestone (Fri Apr 22)

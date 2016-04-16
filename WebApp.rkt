@@ -48,13 +48,27 @@
   (response/xexpr
    `(html (head (title "FTG- WmHTML"))
           (body (h1 "Fractal Turtle Graphics- With more HTML")
+                (h1 "Introduction")
+(p "A fractal is a never ending pattern that repeats itself at different scales, in the words of 
+Wolfe, Schuertz, and Eckert. The property described above is referred to as, Self-Similarity. 
+
+Fractals are discovered in nature, in Geometry, and in Algebra as trees, Sierpinski triangles,
+and in Mandelbrot equation respectively. Other natural examples of fractals are our lungs,
+neurons, lightning,  and fiddlehead fern. Examples of fractals in Geometry and Algebra include Koch Curve, Galanga, and
+Morphalingus.")
+
+(h1 "Uses")
+(p "Fractals are applied in science and engineering to establish correct patterns or normal functioning. For instance, healthy blood vessels are modeled using fractals by scientists, 
+in order to detect cancerous tumors. Furthermore, fractal patterns are used in engineering, for example, to design chips used in cellphone antenna. 
+Lastly, fractals are applied to the design of space-filling devices that facilitate fluid mixing,
+instead of using centrifuges, according to Dr. Wolfe et al.")
+(h1 "Generate Fractal Patterns")
                 "How many recursions should the function preform? "
                 (input ((type "text")(number "recursionNumber")))
                 (input ((type "submit")(value "Submit")))))))
-          ;(pythagoras-tree number)))) will use once user input is working
+             ;(pythagoras-tree number)))) will use once user input is working
 
 
- 
 ; Required for HTML
 (define (render-post a-post)
   `(div ((class "post"))
@@ -65,3 +79,4 @@
 (define (render-posts a-blog)
   `(div ((class "posts"))
         ,@(map render-post a-blog)))
+

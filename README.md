@@ -47,6 +47,8 @@ The Fractal algorithms will be implemented into the webpage for the second miles
 
 Patrick Donegan - I am currently looking into getting the Webpage and Graphics builder to work together. I am looking into (require web-server/formlets) as Ebenezer suggested and hope to find some good stuff on it.
 
+John Adams- working on user input-submission, ran into trouble with assigning the user input value to the drawing function call.
+
 ### Final Presentation (last week of semester)
 A fully-working webpage and interactive demo will be ready for presentation to the class.
 

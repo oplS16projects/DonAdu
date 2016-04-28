@@ -7,39 +7,35 @@
  
 ; Blog definition- required for HTML webpage to run
 (define BLOG
-  (list (post "Filler code" "filler")))
+  (list (post "Welcome to FTG" "Please enter name and a number. (Number must be greater than 1, and less than 100)")))
  
 ; start: runs the webpage
 (define (start request)
-  (render-blog-page BLOG request))
- 
+  (local [(define a-blog
+            (cond [(can-parse-post? (request-bindings request))
+                   (cons (parse-post (request-bindings request))
+                         BLOG)]
+                  [else
+                   BLOG]))]
+    (render-blog-page a-blog request)))
 
-;; Patrick Donegen supplied the first Recursive function that we will use
-;(define (pythagoras-tree side) ; starting position: center of square, facing east
-;  (if (< side 30) ; this seems like a good stopping point...
-;      (home)     ; clear all turtles except the original
-;      (let ((half-side (/ side 2)))
-;        (turn 90)        ; now facing north
-;        (move half-side) ; move north
-;        (turn 90)        ; now facing west
-;        (draw half-side) ; draw west
-;        (turn 90)        ; now facing south
-;        (draw side)      ; draw south
-;        (turn 90)        ; now facing east
-;        (draw side)      ; draw east
-;        (turn 90)        ; now facing north
-;        (draw side)      ; draw north
-;        (turn 90)        ; now facing west
-;        (draw half-side) ; draw west
+(define (can-parse-post? bindings)
+  (and (exists-binding? 'title bindings)
+       (exists-binding? 'body bindings)))
 
-;        (turn -45)         ; turn turtle 1 (current turtle) to face northwest
-;        (split (turn -90)) ; create and turn turtle 2 to face northeast
+; Fractal number global
+(define mynumb 0)
 
-;        (move (* half-side (sqrt 2))) ; move both turtles to the centers of the new squares
-;        (turn -90)                    ; and adjust them to face east
-;        (pythagoras-tree (* (/ (sqrt 2) 2) side)))))
-      ;; Once the webpage and fractal function are linked, will uncomment- original fractal code will be uploaded seperately as well
-
+; Parse Bindings
+(define (parse-post bindings)
+  (begin (display "User's name: ")
+         (display (extract-binding/single 'title bindings))
+         (set! mynumb (string->number (extract-binding/single 'body bindings)))
+         (display "\nSide Length is: ")
+         (display mynumb)
+         (pythagoras-tree 100)
+         (post (extract-binding/single 'title bindings)
+               (extract-binding/single 'body bindings))))
 
 ; render-blog-page: blog request -> response
 ; Consumes a blog and a request, and produces an HTML page
@@ -48,25 +44,39 @@
   (response/xexpr
    `(html (head (title "FTG- WmHTML"))
           (body (h1 "Fractal Turtle Graphics- With more HTML")
-                (h1 "Introduction")
-(p "A fractal is a never ending pattern that repeats itself at different scales, in the words of 
-Wolfe, Schuertz, and Eckert. The property described above is referred to as, Self-Similarity. 
+                ,(render-posts a-blog)
+                (form
+                 (input ((name "title")))
+                 (input ((name "body")))
+                 (input ((type "submit"))))))))
 
-Fractals are discovered in nature, in Geometry, and in Algebra as trees, Sierpinski triangles,
-and in Mandelbrot equation respectively. Other natural examples of fractals are our lungs,
-neurons, lightning,  and fiddlehead fern. Examples of fractals in Geometry and Algebra include Koch Curve, Galanga, and
-Morphalingus.")
+;; Patrick Donegen supplied the first Recursive function that we will use
+(define (pythagoras-tree side) ; starting position: center of square, facing east
+  (if (< side mynumb) ; this seems like a good stopping point...
+      (home)     ; clear all turtles except the original
+      (let ((half-side (/ side 2)))
+        (turn 90)        ; now facing north
+        (move half-side) ; move north
+        (turn 90)        ; now facing west
+        (draw half-side) ; draw west
+        (turn 90)        ; now facing south
+        (draw side)      ; draw south
+        (turn 90)        ; now facing east
+        (draw side)      ; draw east
+        (turn 90)        ; now facing north
+        (draw side)      ; draw north
+        (turn 90)        ; now facing west
+        (draw half-side) ; draw west
 
-(h1 "Uses")
-(p "Fractals are applied in science and engineering to establish correct patterns or normal functioning. For instance, healthy blood vessels are modeled using fractals by scientists, 
-in order to detect cancerous tumors. Furthermore, fractal patterns are used in engineering, for example, to design chips used in cellphone antenna. 
-Lastly, fractals are applied to the design of space-filling devices that facilitate fluid mixing,
-instead of using centrifuges, according to Dr. Wolfe et al.")
-(h1 "Generate Fractal Patterns")
-                "How many recursions should the function preform? "
-                (input ((type "text")(number "recursionNumber")))
-                (input ((type "submit")(value "Submit")))))))
-             ;(pythagoras-tree number)))) will use once user input is working
+        (turn -45)         ; turn turtle 1 (current turtle) to face northwest
+        (split (turn -90)) ; create and turn turtle 2 to face northeast
+
+        (move (* half-side (sqrt 2))) ; move both turtles to the centers of the new squares
+        (turn -90)                    ; and adjust them to face east
+        (pythagoras-tree (* (/ (sqrt 2) 2) side)))))
+      ;; Once the webpage and fractal function are linked, will uncomment- original fractal code will be uploaded seperately as well
+
+
 
 
 ; Required for HTML
@@ -79,4 +89,3 @@ instead of using centrifuges, according to Dr. Wolfe et al.")
 (define (render-posts a-blog)
   `(div ((class "posts"))
         ,@(map render-post a-blog)))
-

@@ -1,0 +1,8 @@
+ABSTRACT
+=========
+Inquire about versatile and well-known graphics programs and most people would mention programs like C++ and Java. The power of Scheme as a graphics program is well
+concealed. It is our aim to bring Scheme to the fore-front as a good graphics language, on the same level as 
+C++ and Java. We use scheme to draw fractals when a user enters a request into a website.
+The method involved is direct programming in a Dr. Racket environment using Scheme's simple libraries that create images and are also able to
+create servers on the go. This signifies the power of Scheme, that a server can be created on the go 
+using Dr. Racket where other languages would falter. Our team discovered that Scheme is a powerful program that can be used to create dynamic and complex graphics objects.

@@ -1,6 +1,4 @@
 # Fractal Turtal Graphics
-This is a template for using your repo's README.md as your project web page. 
-I recommend you copy and paste into your README file. Delete this line and the one above it, customize everything else. Make it look good!
 
 ##Authors
 John Adams
@@ -10,17 +8,13 @@ Person Two
 Patrick Donegan
 
 ##Overview
-A brief description of the project is given here.  The description is 1 to 3 sentences long.  Be concise and clear.
 
 We use scheme to draw fractals when a user enters a request into a website. When the program begins to execute a 
 web-server is created. The user enters data into the webpage and that data is then sent to a racket function which 
 draws a fractal shape.
 
 ##Screenshot
-(insert a screenshot here. You may opt to get rid of the title for it. You need at least one screenshot. Make it actually appear here, don't just add a link.)
-
-Here's a demonstration of how to display an image that's uploaded to this repo:
-![screenshot showing env diagram](withdraw.png)
+![screenie](https://cloud.githubusercontent.com/assets/17749976/14918342/6847d69c-0df1-11e6-9172-bc53942be614.jpg)
 
 ##Concepts Demonstrated
 Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
@@ -29,7 +23,6 @@ Identify the OPL concepts demonstrated in your project. Be brief. A simple list 
 * **Symbolic language processing techniques** are used in the parser.
 
 ##External Technology and Libraries
-Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
 
 We used #lang web-server/insta and turtle graphics to accomplish this project.
 
@@ -74,8 +67,10 @@ This expression recursively calls the function again. This embodies recursion wh
  ```
 
 ##Additional Remarks
-Anything else you want to say in your report. Can rename or remove this section.
 
 We were able to get something together. However, We were not as successful as we hoped. Integrating the web stuff
 with the turtle graphics became a pitfall that was never fully solved.
+
+Because of the nature of Turtle Graphics, Drawing the fractals in an Html page proved impossible. To upload an image to an html page, we would need more time to find and learn the documentation that was responsible.
+Also because Turtle Graphics draws in the final stages of a program, the program needs to be stopped in DrRacket before the final drawing is rendered in the Turtle Graphics window. There is no way around this that I was able to find, unfortunately.
 

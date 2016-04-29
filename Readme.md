@@ -3,7 +3,7 @@
 ##Authors
 John Adams
 
-Person Two
+Ebenezer Ampadu
 
 Patrick Donegan
 
@@ -18,9 +18,9 @@ draws a fractal shape.
 
 ##Concepts Demonstrated
 Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
-* **Data abstraction** is used to provide access to the elements of the RSS feed.
-* The objects in the OpenGL world are represented with **recursive data structures.**
-* **Symbolic language processing techniques** are used in the parser.
+* Fractals are drawn through recursion
+* html web-server is kicked off by Racket
+* web-server takes data input from user to make a custom fractal drawing 
 
 ##External Technology and Libraries
 
@@ -47,20 +47,10 @@ This line of code takes the user input string from the "body" text box, changes 
          (post (extract-binding/single 'title bindings)
                (extract-binding/single 'body bindings))))
 ```
-####Lillian (another team member)
-This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
-```scheme
-(let* ((expr (convert-to-regexp (read-line my-in-port)))
-             (matches (flatten
-                       (hash-map *words*
-                                 (lambda (key value)
-                                   (if (regexp-match expr key) key '()))))))
-  matches)
-```
 
 
 ####Patrick
-This expression recursively calls the function again. This embodies recursion which was the heart of this OPL class
+This expression recursively calls the function again. pythagoras-tree is the function which draws the fractal images. This embodies recursion which was the heart of this OPL class
 ```
  (pythagoras-tree (* (/ (sqrt 2) 2) side) ;; recursively call the function again   
  

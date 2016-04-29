@@ -12,6 +12,10 @@ Patrick Donegan
 ##Overview
 A brief description of the project is given here.  The description is 1 to 3 sentences long.  Be concise and clear.
 
+We use scheme to draw fractals when a user enters a request into a website. When the program begins to execute a 
+web-server is created. The user enters data into the webpage and that data is then sent to a racket function which 
+draws a fractal shape.
+
 ##Screenshot
 (insert a screenshot here. You may opt to get rid of the title for it. You need at least one screenshot. Make it actually appear here, don't just add a link.)
 
@@ -27,7 +31,11 @@ Identify the OPL concepts demonstrated in your project. Be brief. A simple list 
 ##External Technology and Libraries
 Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
 
+We used #lang web-server/insta and turtle graphics to accomplish this project.
+
 ##Favorite Scheme Expressions
+
+
 ####Mark (a team member)
 Each team member should identify a favorite expression or procedure, written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody?
 Remember code looks something like this:
@@ -45,10 +53,17 @@ This expression reads in a regular expression and elegantly matches it against a
   matches)
 ```
 
+
+####Patrick
+This expression recursively calls the function again. This embodies recursion which was the heart of this OPL class
+```
+ (pythagoras-tree (* (/ (sqrt 2) 2) side) ;; recursively call the function again   
+ 
+ ```
+
 ##Additional Remarks
 Anything else you want to say in your report. Can rename or remove this section.
 
-#How to Download and Run
-You may want to link to your latest release for easy downloading by people (such as Mark).
+We were able to get something together. However, We were not as successful as we hoped. Integrating the web stuff
+with the turtle graphics became a pitfall that was never fully solved.
 
-Include what file to run, what to do with that file, how to interact with the app when its running, etc. 

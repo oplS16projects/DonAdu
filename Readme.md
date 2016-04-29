@@ -3,7 +3,7 @@ This is a template for using your repo's README.md as your project web page.
 I recommend you copy and paste into your README file. Delete this line and the one above it, customize everything else. Make it look good!
 
 ##Authors
-Person One
+John Adams
 
 Person Two
 
@@ -36,11 +36,23 @@ We used #lang web-server/insta and turtle graphics to accomplish this project.
 ##Favorite Scheme Expressions
 
 
-####Mark (a team member)
-Each team member should identify a favorite expression or procedure, written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody?
-Remember code looks something like this:
+####John Adams
+
+The function parse-post bindings is the magic behind the program. The main driving force behind the entire program is: 
+(set! mynumb (string->number (extract-binding/single 'body bindings)))
+
+This line of code takes the user input string from the "body" text box, changes it to a number, and the sets the global variable 'mynumb' to the value retrieved. this is then passed as the smallest side length, in the pythagoras-tree function. Once the number is retrieved, only after the "Stop" button in DrRacket is pressed, does the Turtle Graphics window come into play, where the fractal is drawn- starting at a side length of 100, and decreasing down to the minimum length entered by the user.
+
 ```scheme
-(map (lambda (x) (foldr compose functions)) data)
+(define (parse-post bindings)
+  (begin (display "User's name: ")
+         (display (extract-binding/single 'title bindings))
+         (set! mynumb (string->number (extract-binding/single 'body bindings)))
+         (display "\nSide Length is: ")
+         (display mynumb)
+         (pythagoras-tree 100)
+         (post (extract-binding/single 'title bindings)
+               (extract-binding/single 'body bindings))))
 ```
 ####Lillian (another team member)
 This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....

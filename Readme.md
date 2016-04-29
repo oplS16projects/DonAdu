@@ -50,8 +50,10 @@ This line of code takes the user input string from the "body" text box, changes 
 
 
 ####Patrick
-This expression recursively calls the function again. pythagoras-tree is the function which draws the fractal images. This embodies recursion which was the heart of this OPL class
+This expression first moves the two new turtles into positon and then recursively calls the function again. pythagoras-tree is the function which draws the fractal images. This embodies recursion which was the heart of this OPL class
 ```
+ (move (* half-side (sqrt 2))) ; move both turtles to the centers of the new squares
+ (turn -90)                
  (pythagoras-tree (* (/ (sqrt 2) 2) side) ;; recursively call the function again   
  
  ```

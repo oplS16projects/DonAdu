@@ -80,6 +80,21 @@ This expression is what builds the fractal with turtles. at the end the expressi
  
  ```
 
+
+####Ebenezer Ampadu
+Function render-blog-page takes a blog post and a request and submits to the start function which generates the html page. It is inside this function that the form to take user input resides. Second, it is the function that displays information relating to Fractal Turtle Graphics. Any information to be added to the blog can be appended here.
+
+```
+(define (render-blog-page a-blog request)  
+  (response/xexpr
+   `(html (head (title "FTG- WmHTML"))
+          (body (h1 "Fractal Turtle Graphics- With more HTML")
+                ,(render-posts a-blog)
+                (form
+                 (input ((name "title")))
+                 (input ((name "body")))
+                 (input ((type "submit")))))))) 
+```
 ##Additional Remarks
 
 We were able to get something together. However, We were not as successful as we hoped. Integrating the web stuff
